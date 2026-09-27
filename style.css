@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+
+  /* ❌ REMOVE vertical centering */
+  display: flex;
+  justify-content: center;
+
+  /* ✅ allow scrolling if needed */
+  min-height: 100vh;
+}
+
+/* Main container */
+.game {
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
+
+  margin-top: 40px;   /* 👈 gives breathing space */
+}
+
+/* Name (Answer) */
+#name {
+  font-size: 42px;
+  color: #ffd369;
+  //margin-top: 190px;   /* adjust 40–80 as you like */
+  margin-bottom: 10px;
+}
+
+/* Answer image (shown after reveal) */
+#answer-image {
+  width: 220px;
+  display: none;
+  opacity: 0;
+  margin: 10px auto 15px auto;
+  border-radius: 12px;
+  transition: opacity 0.5s ease;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+/* Mystery image container */
+#image-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 20px;
+}
+
+/* Mystery image */
+#image {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: opacity 0.5s ease;
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+/* Clues section */
+#clues {
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+/* Each clue box */
+#clues p {
+  background: rgba(255,255,255,0.1);
+  padding: 12px;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 70%;
+  animation: fadeIn 0.4s ease;
+}
+
+/* Button */
+button {
+  margin-top: 25px;
+  padding: 12px 25px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background: #ffd369;
+  color: #222;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ffb347;
+  transform: scale(1.05);
+}
+
+/* Fade animation for clues */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
