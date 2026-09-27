@@ -1,4 +1,268 @@
 let data = [
+  {
+    "name": "Spider-Man",
+    "image": "images/spiderman.jpg",
+    "clues": [
+      "Climbs walls like a lizard",
+      "Shoots sticky webs",
+      "School + hero life",
+      "Wears red mask",
+      "Friendly neighborhood hero"
+    ]
+  },
+  {
+    "name": "Iron Man",
+    "image": "images/ironman.jpg",
+    "clues": [
+      "Very smart and rich",
+      "Builds cool suits",
+      "Has AI friend",
+      "Flies in armor",
+      "I am Iron Man"
+    ]
+  },
+  {
+    "name": "Captain America",
+    "image": "images/captainamerica.jpg",
+    "clues": [
+      "Loves his country",
+      "Throws shield",
+      "Super soldier",
+      "Always does right",
+      "First Avenger"
+    ]
+  },
+  {
+    "name": "Thor",
+    "image": "images/thor.jpg",
+    "clues": [
+      "Has big hammer",
+      "Controls lightning",
+      "From another world",
+      "Very strong",
+      "God of Thunder"
+    ]
+  },
+  {
+    "name": "Hulk",
+    "image": "images/hulk.jpg",
+    "clues": [
+      "Gets angry and big",
+      "Very strong",
+      "Green body",
+      "Breaks things",
+      "Hulk Smash"
+    ]
+  },
+  {
+    "name": "Black Panther",
+    "image": "images/blackpanther.jpg",
+    "clues": [
+      "Wears black suit",
+      "King of Wakanda",
+      "Fast and strong",
+      "Cat-like moves",
+      "Wakanda Forever"
+    ]
+  },
+  {
+    "name": "Elsa",
+    "image": "images/elsa.jpg",
+    "clues": [
+      "Makes ice",
+      "Snow powers",
+      "Princess",
+      "Sings songs",
+      "Let it go"
+    ]
+  },
+  {
+    "name": "Anna",
+    "image": "images/anna.jpg",
+    "clues": [
+      "Loves her sister",
+      "Very brave",
+      "No powers",
+      "Goes on adventure",
+      "Frozen"
+    ]
+  },
+  {
+    "name": "Mickey Mouse",
+    "image": "images/mickey.jpg",
+    "clues": [
+      "Big round ears",
+      "Always smiling",
+      "Disney world",
+      "Best friends",
+      "Disney mascot"
+    ]
+  },
+  {
+    "name": "Donald Duck",
+    "image": "images/donald.jpg",
+    "clues": [
+      "Always angry voice",
+      "Wears blue",
+      "Lives with Mickey",
+      "Funny duck",
+      "Quack quack"
+    ]
+  },
+  {
+    "name": "Simba",
+    "image": "images/simba.jpg",
+    "clues": [
+      "Lion king",
+      "Runs away",
+      "Comes back strong",
+      "Jungle life",
+      "Hakuna Matata"
+    ]
+  },
+  {
+    "name": "Nemo",
+    "image": "images/nemo.jpg",
+    "clues": [
+      "Small fish",
+      "Lost in ocean",
+      "Dad finds him",
+      "Swims a lot",
+      "Just keep swimming"
+    ]
+  },
+  {
+    "name": "Lightning McQueen",
+    "image": "images/mcqueen.jpg",
+    "clues": [
+      "Fast red car",
+      "Loves racing",
+      "Number 95",
+      "Says ka-chow",
+      "Cars movie"
+    ]
+  },
+  {
+    "name": "Buzz Lightyear",
+    "image": "images/buzz.jpg",
+    "clues": [
+      "Space ranger",
+      "Says infinity line",
+      "Wears space suit",
+      "Toy hero",
+      "To infinity and beyond"
+    ]
+  },
+  {
+    "name": "Woody",
+    "image": "images/woody.jpg",
+    "clues": [
+      "Cowboy toy",
+      "Hat and boots",
+      "Leader of toys",
+      "Best friend Buzz",
+      "Toy Story"
+    ]
+  },
+  {
+    "name": "Po",
+    "image": "images/po.jpg",
+    "clues": [
+      "Big panda",
+      "Loves food",
+      "Learns kung fu",
+      "Funny hero",
+      "Dragon Warrior"
+    ]
+  },
+  {
+    "name": "Shrek",
+    "image": "images/shrek.jpg",
+    "clues": [
+      "Green ogre",
+      "Lives in swamp",
+      "Looks scary",
+      "Actually kind",
+      "Donkey friend"
+    ]
+  },
+  {
+    "name": "Minions",
+    "image": "images/minions.jpg",
+    "clues": [
+      "Small yellow",
+      "Talk funny",
+      "Wear goggles",
+      "Love bananas",
+      "Despicable Me"
+    ]
+  },
+  {
+    "name": "Pikachu",
+    "image": "images/pikachu.jpg",
+    "clues": [
+      "Yellow mouse",
+      "Electric power",
+      "Says pika pika",
+      "Cute and fast",
+      "Pokemon"
+    ]
+  },
+  {
+    "name": "Mario",
+    "image": "images/mario.jpg",
+    "clues": [
+      "Wears red cap",
+      "Big mustache",
+      "Jumps on enemies",
+      "Saves princess",
+      "Its a me Mario"
+    ]
+  },
+  {
+    "name": "Sonic",
+    "image": "images/sonic.jpg",
+    "clues": [
+      "Runs very fast",
+      "Blue color",
+      "Spins while running",
+      "Collects rings",
+      "Speed hero"
+    ]
+  },
+  {
+    "name": "Doraemon",
+    "image": "images/doraemon.jpg",
+    "clues": [
+      "Blue robot cat",
+      "Comes from future",
+      "Has magic pocket",
+      "Helps a boy",
+      "Doraemon"
+    ]
+  },
+  {
+    "name": "Shinchan",
+    "image": "images/shinchan.jpg",
+    "clues": [
+      "Very naughty kid",
+      "Funny dance",
+      "Annoys parents",
+      "Talks too much",
+      "Shinchan"
+    ]
+  },
+  {
+    "name": "Ben 10",
+    "image": "images/ben10.jpg",
+    "clues": [
+      "Has special watch",
+      "Turns into aliens",
+      "Fights villains",
+      "Young hero",
+      "Ben 10"
+    ]
+  },
 
 { name: "Ranbir Kapoor", image: "images/ranbir.jpg", clues: [
 "Bhai ko GF lai pani chodega nahi",
