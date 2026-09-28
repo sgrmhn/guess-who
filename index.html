@@ -5,28 +5,34 @@
   <title>Guess Who Game</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="game">
+<!-- MODE SELECT SCREEN -->
+<div id="mode-screen" class="mode-screen">
+  <h1>Choose Mode</h1>
+  <button onclick="startGame('kids')">Kids Mode 👶</button>
+  <button onclick="startGame('adult')">Adult Mode 😎</button>
+</div>
 
-  <!-- Name -->
+<!-- GAME SCREEN (hidden initially) -->
+<div id="game" class="game" style="display:none;">
+
   <h1 id="name"></h1>
 
-  <!-- Answer image (RIGHT BELOW NAME) -->
   <img id="answer-image" src="" />
 
-  <!-- Mystery image -->
   <div id="image-container">
     <img id="image" src="" />
   </div>
 
-  <!-- Clues -->
   <div id="clues"></div>
+  <button onclick="goToMenu()" class="back-btn">⬅ Back to Menu</button>
 
   <button onclick="nextStep()">Next</button>
 
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
-
