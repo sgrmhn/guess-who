@@ -1,5 +1,16 @@
+let current = 0;
+let step = -1;
+
+let startIndex = 0;
+let endIndex = 0;
+
+/* =======================
+   YOUR DATA (keep all 30 here)
+======================= */
+
 let data = [
-  {
+
+{
     "name": "Spider-Man",
     "image": "images/spiderman.jpg",
     "clues": [
@@ -263,7 +274,6 @@ let data = [
       "Ben 10"
     ]
   },
-
 { name: "Ranbir Kapoor", image: "images/ranbir.jpg", clues: [
 "Bhai ko GF lai pani chodega nahi",
 "Pyar karta hoon… but long term nahi",
@@ -497,8 +507,31 @@ let data = [
 ]}
 
 ];
-let current = 0;
-let step = -1;
+
+/* =======================
+   MODE SELECT
+======================= */
+
+function startGame(mode) {
+
+  document.getElementById("mode-screen").style.display = "none";
+  document.getElementById("game").style.display = "block";
+
+  if (mode === "kids") {
+    startIndex = 0;
+    endIndex = data.findIndex(item => item.name === "Ranbir Kapoor");
+  } else {
+    startIndex = data.findIndex(item => item.name === "Ranbir Kapoor");
+    endIndex = data.length;
+  }
+
+  current = startIndex;
+  load();
+}
+
+/* =======================
+   LOAD NEW CELEB
+======================= */
 
 function load() {
   let item = data[current];
@@ -518,6 +551,10 @@ function load() {
 
   step = -1;
 }
+
+/* =======================
+   NEXT STEP LOGIC
+======================= */
 
 function nextStep() {
   let item = data[current];
@@ -550,22 +587,42 @@ function nextStep() {
   }
 
   current++;
-  if (current >= data.length) current = 0;
+
+  if (current >= endIndex) {
+    current = startIndex;
+  }
 
   load();
 }
+
+function goToMenu() {
+
+  // Hide game
+  document.getElementById("game").style.display = "none";
+
+  // Show menu
+  document.getElementById("mode-screen").style.display = "flex";
+
+  // Reset state
+  current = 0;
+  step = -1;
+
+  document.getElementById("clues").innerHTML = "";
+  document.getElementById("name").innerText = "";
+
+  document.getElementById("image").style.opacity = "1";
+  document.getElementById("image").src = "";
+
+  let answerImg = document.getElementById("answer-image");
+  answerImg.style.display = "none";
+  answerImg.style.opacity = "0";
+}
+/* =======================
+   SPACEBAR CONTROL
+======================= */
 
 document.addEventListener("keydown", function(e) {
   if (e.code === "Space") {
     nextStep();
   }
 });
-
-function shuffle(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    let j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-}
-//shuffle(data);   // run once
-load();
