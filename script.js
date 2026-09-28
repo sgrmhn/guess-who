@@ -14,10 +14,10 @@ let data = [
     "name": "Spider-Man",
     "image": "images/spiderman.jpg",
     "clues": [
-      "Climbs walls like a lizard",
-      "Shoots sticky webs",
-      "School + hero life",
-      "Wears red mask",
+      "I love climbing walls",
+      "I live in New York-Queens",
+      "I grew up with uncle Ben and aunt May",
+      "My favourite color is Red and I love science",
       "Friendly neighborhood hero"
     ]
   },
@@ -25,10 +25,10 @@ let data = [
     "name": "Iron Man",
     "image": "images/ironman.jpg",
     "clues": [
-      "Very smart and rich",
-      "Builds cool suits",
-      "Has AI friend",
-      "Flies in armor",
+      "I am very smart and rich",
+      "I builds cool suits",
+      "I have a very cool AI friend - JARVIS",
+      "I have a suit that flies",
       "I am Iron Man"
     ]
   },
@@ -47,9 +47,9 @@ let data = [
     "name": "Captain America",
     "image": "images/captainamerica.jpg",
     "clues": [
-      "Loves his country",
-      "Throws shield",
-      "Super soldier",
+      "I love my country",
+      "I am super soilder",
+      "I use shield but I can even use Thor's hammer",
       "Always does right",
       "First Avenger"
     ]
@@ -58,9 +58,9 @@ let data = [
     "name": "Thor",
     "image": "images/thor.jpg",
     "clues": [
-      "Has big hammer",
+      "I am from another world.",
       "Controls lightning",
-      "From another world",
+      "I love hammers, but I am not tradie",
       "Very strong",
       "God of Thunder"
     ]
@@ -69,11 +69,11 @@ let data = [
     "name": "Hulk",
     "image": "images/hulk.jpg",
     "clues": [
-      "Gets angry and big",
-      "Very strong",
-      "Green body",
+      "You dont' want to see me angry.",
+      "I like smashing things",
+      "I love science",
       "Breaks things",
-      "Hulk Smash"
+      "My real name is Dr. Bruce Banner"
     ]
   },
   {
