@@ -628,6 +628,19 @@ function goToMenu() {
   answerImg.style.display = "none";
   answerImg.style.opacity = "0";
 }
+function skip() {
+
+  // Move to next celeb directly
+  current++;
+
+  // Stay within selected mode
+  if (current >= endIndex) {
+    current = startIndex;
+  }
+
+  // Load next celeb
+  load();
+}
 /* =======================
    SPACEBAR CONTROL
 ======================= */
