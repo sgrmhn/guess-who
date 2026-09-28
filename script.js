@@ -32,6 +32,17 @@ let data = [
       "I am Iron Man"
     ]
   },
+ {
+    "name": "Sagar Ba",
+    "image": "images/sagar.jpg",
+    "clues": [
+      "I fix wifi faster than superheroes",
+      "I am Nepali babu",
+      "If I stare at someone, they know I am angry",
+      "Kids think I am very good at maths",
+      "Rian only scared of me"
+    ]
+ },
   {
     "name": "Captain America",
     "image": "images/captainamerica.jpg",
