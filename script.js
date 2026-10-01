@@ -285,6 +285,17 @@ let data = [
       "Ben 10"
     ]
   },
+{
+  "name": "Rakhi Sawant",
+  "image": "images/rakhi.jpg",
+  "clues": [
+    "Reality show mujhe nahi, main reality show ko chalati hoon",
+    "My drama level is 100/10",
+    "Main jahan khade hote hai, wahan TRP badh jaata hai 📈",
+    "Invite dance ke liye mila tha… lekin kiss saa famous ho gaya😳",
+    "I look good on your brother's wrist"
+  ]
+},
 { name: "Ranbir Kapoor", image: "images/ranbir.jpg", clues: [
 "Bhai ko GF lai pani chodega nahi",
 "Pyar karta hoon… but long term nahi",
